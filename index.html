@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <!-- Tailwind Cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <!-- fontAwesome CDN -->
+    <script src="https://kit.fontawesome.com/b440cd0d94.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="navbar bg-base-100 shadow-md px-4">
+        <!-- Left: Logo + Title -->
+        <div class="navbar-start flex items-center space-x-3">
+            <img src="./assets/logo.png" alt="BD Logo"
+                class="w-10 h-10 rounded-full border" />
+            <span class="text-lg font-bold text-green-700">Emergency Service</span>
+        </div>
+
+        <!-- Right: Numbers + Button -->
+        <div class="navbar-end flex items-center space-x-3">
+            <!-- Heart -->
+            <div class="flex items-center bg-[#41ff6b1a] py-2 px-8 rounded-full">
+                <span class="text-xl font-bold text-gray-700 mr-1">0</span>
+                <i class="fa-solid fa-heart text-2xl text-red-500"></i>
+            </div>
+
+            <!-- Coins -->
+            <div class="flex items-center bg-[#41ff6b1a] px-8 py-2 rounded-full">
+                <span class="text-sm font-bold text-gray-700 mr-1">100</span>
+                <div>
+                    <img class="w-7" src="./assets/coin.png" alt="">
+                </div>
+            </div>
+
+            <!-- Copy Button -->
+            <button class="btn bg-[#00A63E] btn-sm rounded-full px-8 py-5 text-white">2 Copy</button>
+        </div>
+    </div>
+
+    <!-- banner -->
+     <div class="bg-gradient-to-r from-green-800 to-green-900 text-white py-6 shadow-md">
+  <div class="flex flex-col items-center text-center">
+    <!-- Logo -->
+    <img src="./assets/logo-dark.png" alt="Logo" class="w-16 h-16 mb-3">
+
+    <!-- Bangla Title -->
+    <h1 class="text-xl font-bold mb-1">জরুরি সেবা ডিরেক্টরি</h1>
+
+    <!-- English Subtitle -->
+    <p class="text-sm text-gray-200">
+      Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh
+    </p>
+  </div>
+</div>
+
+<!-- card section -->
+ <div class="grid grid-cols-12 gap-4 p-4">
+  <!-- Cards Section (9 columns) -->
+  <div class="col-span-12 lg:col-span-9 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    
+    <!-- Example Card -->
+    <div class="card bg-base-100 shadow-md border rounded-xl">
+      <div class="card-body">
+        <!-- Icon -->
+        <div class=" flex justify-between items-center mb-2">
+          <div class=" bg-red-100 w-16 h-16 p-3 rounded-full">
+            <img class="w-10" src="./assets/emergency.png" alt="">
+          </div>
+          <div>
+            <i class="fa-regular fa-heart text-2xl"></i>
+          </div>
+        </div>
+
+        <!-- Title (Bangla / English) -->
+        <h2 class="card-title text-lg font-bold">National Emergency number</h2>
+        <p class="text-gray-600 text-xl">National Emergency</p>
+        <p class="text-gray-600 text-xl">999</p>
+        <p class="text-gray-600 text-xl ">Ag</p>
+        <!-- <div class="bg-gray-200 w-20 h-8 py-1 px-2 rounded-full">
+            <p>স</p>
+        </div> -->
+        
+
+        <!-- Actions -->
+        <div class="mt-3 flex justify-center gap-2">
+          <button class="btn btn-outline btn-sm">
+            <i class="fa-solid fa-copy mr-1"></i> Copy
+          </button>
+          <button class="btn btn-success btn-sm">
+            <i class="fa-solid fa-phone mr-1"></i> Call
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copy above card multiple times for grid -->
+    
+  </div>
+
+  <!-- Call History Section (3 columns) -->
+  <div class="col-span-12 lg:col-span-3 bg-base-100 shadow-md rounded-xl border p-4">
+    <div class="flex justify-between items-center mb-3">
+      <h3 class="font-bold text-lg">📞 Call History</h3>
+      <button class="btn btn-xs btn-error text-white">Clear</button>
+    </div>
+    <ul class="space-y-3">
+      <li class="border-b pb-2">
+        <p class="font-medium">অ্যাম্বুলেন্স</p>
+        <p class="text-xs text-gray-500">999</p>
+        <p class="text-xs text-gray-400">11:25:45 AM</p>
+      </li>
+      <li class="border-b pb-2">
+        <p class="font-medium">ফায়ার সার্ভিস</p>
+        <p class="text-xs text-gray-500">102</p>
+        <p class="text-xs text-gray-400">11:20:30 AM</p>
+      </li>
+      <li>
+        <p class="font-medium">পুলিশ</p>
+        <p class="text-xs text-gray-500">999</p>
+        <p class="text-xs text-gray-400">11:15:10 AM</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+</body>
+
+</html>
