@@ -41,8 +41,6 @@
 
 - document.createElement("tag") → to create a new element.
 
----
-
 - .appendChild() or .append() → to insert it into the page.
 
 ---
@@ -83,6 +81,7 @@
 
 ---
 - preventDefault() → Stops the default action of an element.
+
 - Example: Prevent a link from opening or a form from submitting.
 
 - stopPropagation() → Stops the event from bubbling up to parent elements.
