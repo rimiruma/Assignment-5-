@@ -1,7 +1,8 @@
 A National Service Website
 
-Question 1: What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
+# Question 1: What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
+---
 Answer:
 
 getElementById("id")
@@ -28,7 +29,7 @@ Finds all elements that match a CSS selector.
 
 Returns a NodeList (like an array) of elements
 
-Question 2: How do you create and insert a new element into the DOM?
+# Question 2: How do you create and insert a new element into the DOM?
 
 Answer:
 
